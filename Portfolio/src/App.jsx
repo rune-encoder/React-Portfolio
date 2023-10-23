@@ -1,19 +1,25 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
-// import Header from './components/Header.jsx'
-// import Navigation from './components/Navigation.jsx'
-// import Footer from './components/Footer.jsx'
+import Header from "./components/Header.jsx";
+import Nav from "./components/Nav.jsx";
+import Main from "./components/UI/Main.jsx";
+import Footer from "./components/Footer.jsx";
 
-import './styles/App.css'
+import "./styles/App.css";
 
 function App() {
-
   return (
-    <main>
+    <>
+      <Header>
+        <Nav />
+      </Header>
       <h1>App.JSX</h1>
+      <Main>
       <Outlet />
-    </main>
-  )
+      </Main>
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
