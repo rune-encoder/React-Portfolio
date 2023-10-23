@@ -3,12 +3,13 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 
-// import About from "./About.jsx";
-// import Portfolio from "./Portfolio.jsx";
-// import Contact from "./Contact.jsx";
-// import Resume from "./Resume.jsx";
+import About from "./pages/About.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Contact from "./pages/Contact.jsx";
+import Resume from "./pages/Resume.jsx";
 // import Error from "./Error.jsx";
 
+import 'tailwindcss/tailwind.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/index.css";
 
@@ -20,23 +21,23 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        // element: <About />,
+        element: <About />,
       },
       {
         path: "/About",
-        // element: <About />,
+        element: <About />,
       },
       {
         path: "/Portfolio",
-        // element: <Portfolio />,
+        element: <Portfolio />,
       },
       {
         path: "/Contact",
-        // element: <Contact />,
+        element: <Contact />,
       },
       {
         path: "/Resume",
-        // element: <Resume />,
+        element: <Resume />,
       },
     ],
   },
