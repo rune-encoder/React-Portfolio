@@ -1,0 +1,52 @@
+.container {
+}
+
+.profile-photo {
+  width: 300px;
+  height: auto;
+}
+.image-group {
+  /* Center the contents */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: solid 4px #91277a; /*! Revisit this later ! */
+}
+
+.about-group {
+  border: solid 4px #2f318b; /*! Revisit this later ! */
+}
+
+.title {
+    padding: 10px 0;
+}
+
+.about-info {
+  margin: 20px 5px;
+}
+
+.slogan {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 10px;
+    border: solid 4px #2f318b; /*! Revisit this later ! */
+}
+
+/* Laptops */
+/* @media screen and (max-width: 1024px) {
+} */
+
+/* Tablets */
+/* @media screen and (max-width: 992px) {
+} */
+/* Large smartphones */
+/* @media screen and (max-width: 768px) {
+} */
+
+/* Small smartphones */
+/* @media screen and (max-width: 576px) {
+} */
