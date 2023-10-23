@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 * {
   margin: 0;
@@ -33,6 +33,7 @@
   min-height: 100vh;
 }
 
+/* ============================================================== */
 a {
   font-weight: 500;
   color: #646cff;
@@ -45,23 +46,26 @@ a:hover {
 
 /* ============================================================== */
 header {
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 
   width: 100%;
-  
-  padding: 10px; 
+
+  padding: 10px;
 
   border: solid 4px #f01616; /*! Revisit this later ! */
 }
 
+/* Where the main content is displayed */
 main {
-
+  padding: 10px 0;
+  border: solid 4px #f01616; /*! Revisit this later ! */
 }
 
 footer {
   /* width: 100%; */
+  border: solid 4px #f01616; /*! Revisit this later ! */
 }
 /* ============================================================== */
 
@@ -70,13 +74,58 @@ h1 {
   line-height: 1.1;
 }
 
-nav {
-  display: flex;
-  align-items: center;
+h2 {
+  font-size: 2.4em;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1.8em;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.2;
 }
 
 /* ============================================================== */
+.nav-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
 
+  /* width: 100%; */
+  /* padding: 10px; */
+
+  border: solid 4px #f016c1; /*! Revisit this later ! */
+}
+
+nav {
+  display: inline-flex;
+  align-items: center;
+
+  border: solid 4px #38233d; /*! Revisit this later ! */
+}
+
+nav a {
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  text-align: center;
+  border: solid 4px #f01616; /*! Revisit this later ! */
+}
+
+.util-group {
+  padding: 10px;
+
+  border: solid 4px #16f0a7; /*! Revisit this later ! */
+}
+
+/* =========================== ABOUT ========================== */
+/* About.css for About.jsx */
+/* ============================================================== */
 
 button {
   border-radius: 8px;
@@ -111,21 +160,53 @@ button:focus-visible {
   }
 } */
 
-/* Tablets - header changes color */
+/* Laptops */
+@media screen and (max-width: 1024px) {
+  body {
+    background: #ff84d0;
+  }
+}
+
+/* Tablets */
 @media screen and (max-width: 992px) {
   body {
     background: #edff84;
   }
 }
 
-/* Large smartphones - navbar changes color */
+/* Large smartphones */
 @media screen and (max-width: 768px) {
   body {
     background-color: #84ffa3;
   }
+
+  header {
+    height: 18rem;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-group {
+    align-items:start;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 90%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav a {
+    padding: 0;
+    margin: 1px;
+    width: 90%;
+  }
 }
 
-/* Small smartphones - image placeholders change color */
+/* Small smartphones */
 @media screen and (max-width: 576px) {
   body {
     background-color: #84c1ff;

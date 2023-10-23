@@ -5,18 +5,23 @@ export default {
   theme: {
     darkMode: "class",
     screens: {
-      mobile: "640px",
-      // => @media (min-width: 640px) { ... }
-      tablet: "768px",
-      // => @media (min-width: 768px) { ... }
-      desktop: "1024px",
-      // => @media (min-width: 1024px) { ... }
-      "large-desktop": "1280px",
-      // => @media (min-width: 1280px) { ... }
-      "extra-large-desktop": "1536px",
-      // => @media (min-width: 1536px) { ... }
+      "mobile": "576px",
+      "large-mobile": "768px",
+      "tablet": "992px",
+      "laptop": "1024px",
+      "desktop": "1280px",
+      "large-desktop": "1536px",
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        '1': 'repeat(1, minmax(0, 1fr))',
+        '2': 'repeat(2, minmax(0, 1fr))',
+        '3': 'repeat(3, minmax(0, 1fr))',
+        '4': 'repeat(4, minmax(0, 1fr))',
+        '5': 'repeat(5, minmax(0, 1fr))',
+        '6': 'repeat(6, minmax(0, 1fr))',
+      },
+    },
   },
   plugins: [],
 };
