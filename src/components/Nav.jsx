@@ -4,7 +4,6 @@ import Navbar from "./UI/Navbar.jsx";
 export default function Nav(props) {
   return (
     <div className="nav-group">
-      <div className="util-group">{props.children}</div>
       <nav>
         <Navbar
           links={[
