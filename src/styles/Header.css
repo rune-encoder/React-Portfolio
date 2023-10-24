@@ -18,14 +18,7 @@ header {
 }
 
 header h1 {
-  filter: drop-shadow(5px 3px 10px var(--opacity-medium));
-}
-
-.nav-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: flex-start;
+  margin-left: 30px;
   filter: drop-shadow(5px 3px 10px var(--opacity-medium));
 }
 
@@ -34,7 +27,9 @@ nav {
   flex-direction: row;
   justify-content: right;
   align-items: center;
+  margin-right: 30px;
   padding: 10px;
+  filter: drop-shadow(5px 3px 10px var(--opacity-medium));
 }
 
 nav a {
@@ -46,14 +41,15 @@ nav a {
   font-size: 20px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
   filter: opacity(90%);
   outline: 0.1px solid;
   outline-color: var(--medium-dark);
   background-color: var(--dark);
 }
 
-nav a:hover {
+nav a:hover,
+.util-group:hover {
   background: var(--btn-hover-right);
   background: linear-gradient(
     to right,
@@ -69,16 +65,32 @@ nav a:hover {
   color: var(--unique);
 }
 
-nav a:active {
+nav a:active,
+.util-group:active {
   background: var(--btn-right);
   background: linear-gradient(to right, var(--btn-left), var(--btn-right));
   opacity: 85%;
   color: var(--medium);
 }
 
-/* .util-group { */
-/*! DELETE */
-/* } */
+.util-group {
+  border: none;
+  border-radius: 50px;
+  color: var(--light);
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  filter: opacity(90%);
+  outline: 0.1px solid;
+  outline-color: var(--medium);
+  background-color: var(--light);
+
+  position: fixed;
+  top: 7px;
+  right: 7px;
+  z-index: 2;
+}
 
 /* =========================== Media Queries ========================== */
 
@@ -89,32 +101,32 @@ nav a:active {
     text-align: center;
   }
 
-  .nav-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 10px;
+  header h1 {
+    margin: 0;
   }
 
   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
     padding: 10px;
+    margin-right: 0;
   }
 
   nav a {
     margin: 0 10px;
   }
+
+  .util-group {
+    top: 25px;
+    right: 20px;
+  }
 }
 
 /* Large smartphones */
 @media screen and (max-width: 768px) {
-  .nav-group {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
   nav {
     display: flex;
     flex-direction: column;

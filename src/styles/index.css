@@ -8,12 +8,14 @@
 }
 
 .dark {
+  /* Lights and Darks */
   --light: #fff;
   --medium: #bfbfbf;
   --opacity-medium: #40404077;
   --medium-dark: rgb(37, 37, 37);
   --dark: #131313;
-  --unique: rgb(228, 44, 44);
+
+  /* Buttons Color Style*/
   --btn-hover-left: #c9d7eb;
   --btn-hover-right: #d4ddee;
   --btn-bd: #3f4c6b;
@@ -21,18 +23,24 @@
   --btn-left: #506188;
   --btn-right: #626e8a;
 
+  /* Theme Color Style */
+  --unique: rgb(228, 44, 44);
+
+  /*! REVISIT */
   --primary: #9e7528;
   --secondary: rgb(94, 14, 67);
   --tertiary: rgb(105, 20, 209);
 }
 
 .light {
+  /* Lights and Darks */
   --light: #000;
   --medium: #404040;
   --opacity-medium: #bfbfbf86;
   --medium-dark: rgb(218, 218, 218);
   --dark: #FFFFFF;
-  --unique: rgb(27, 211, 211);
+
+  /* Buttons Color Style*/
   --btn-hover-left: #1b4728;
   --btn-hover-right: #1b4233;
   --btn-bd: #c0b392;
@@ -40,6 +48,10 @@
   --btn-left: #af9e77;
   --btn-right: #9d9175;
 
+  /* Theme Color Style */
+  --unique: rgb(27, 211, 211);
+
+  /*! REVISIT */
   --primary: #618ADF;
   --secondary: rgb(161, 241, 188);
   --tertiary: rgb(150, 235, 46);
@@ -91,7 +103,7 @@ a {
 }
 
 a:hover {
-  color: var(--i-text);
+  color: var(--unique);
 }
 
 footer {
@@ -119,29 +131,36 @@ p {
   line-height: 1.2;
 }
 
-/*!=========================== Button Style ========================== REVISIT*/
+/* ! =========================== Media Queries ========================== DELETE */
+/* Laptops */
+@media screen and (max-width: 1024px) {
+  h1 {
+    color: var(--primary);
+  }
+}
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-} */
-/* button:hover {
-  border-color: #646cff;
-} */
+/* Tablets */
+@media screen and (max-width: 992px) {
+  h1 {
+    color: var(--secondary);
+  }
+}
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+  h1 {
+    color: var(--tertiary);
+  }
+}
 
-/* button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+  h1 {
+    color: var(--unique);
+  }
+}
+/* ! =========================== Media Queries ========================== DELETE */
 
-/* =========================== Header ========================== */
+/* =========================== HEADER ========================= */
 /* Header.css for Header.jsx */
 /* ============================================================ */
 
@@ -149,61 +168,18 @@ button:focus-visible {
 /* About.css for About.jsx */
 /* ============================================================ */
 
-/* =========================== ABOUT ========================== */
+/* =========================== PORTFOLIO ====================== */
 /* Portfolio.css for Portfolio.jsx */
 /* ============================================================ */
 
-/* =========================== ABOUT ========================== */
+/* =========================== CONTACT ======================== */
 /* Contact.css for Contact.jsx */
 /* ============================================================ */
 
-/* =========================== ABOUT ========================== */
+/* =========================== RESUME ========================= */
 /* Resume.css for Resume.jsx */
 /* ============================================================ */
 
-/* ! =========================== Media Queries ========================== DELETE */
-/* Laptops */
-@media screen and (max-width: 1024px) {
-  body {
-    background: #ff84d0;
-  }
-}
-
-/* Tablets */
-@media screen and (max-width: 992px) {
-  body {
-    background: #edff84;
-  }
-}
-
-/* Large smartphones */
-@media screen and (max-width: 768px) {
-  body {
-    background-color: #84ffa3;
-  }
-
-}
-
-/* Small smartphones */
-@media screen and (max-width: 576px) {
-  body {
-    background-color: #84c1ff;
-  }
-}
-
-/* ! =========================== Media Queries ========================== DELETE */
-/* Laptops */
-/* @media screen and (max-width: 1024px) {
-} */
-
-/* Tablets */
-/* @media screen and (max-width: 992px) {
-} */
-/* Large smartphones */
-/* @media screen and (max-width: 768px) {
-} */
-
-/* Small smartphones */
-/* @media screen and (max-width: 576px) {
-} */
-/* ! =========================== Media Queries ========================== DELETE */
+/* =========================== FOOTER ========================= */
+/* Footer.css for Footer.jsx */
+/* ============================================================ */
