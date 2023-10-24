@@ -73,7 +73,8 @@ nav a:active,
   color: var(--medium);
 }
 
-.util-group {
+/*! Revisit */
+.util-group { 
   border: none;
   border-radius: 50px;
   color: var(--light);
@@ -85,7 +86,6 @@ nav a:active,
   outline: 0.1px solid;
   outline-color: var(--medium);
   background-color: var(--light);
-
   position: fixed;
   top: 7px;
   right: 7px;
