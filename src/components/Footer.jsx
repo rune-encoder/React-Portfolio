@@ -22,8 +22,7 @@ export default function Footer(props) {
           <FaGithub className="icon" />
         </a>
         <a
-          href="www.linkedin.com/in/
-          christian-palacios-3536281aa
+          href="https://linkedin.com/in/christian-palacios-3536281aa/
           "
           target="_blank"
           title="Visit Christian's LinkedIn"
