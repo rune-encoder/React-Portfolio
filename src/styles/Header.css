@@ -1,4 +1,10 @@
 header {
+  background-image: url(../assets/header.png),
+    linear-gradient(270deg, var(--primary) 0%, var(--dark) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6,17 +12,21 @@ header {
   width: 100%;
   padding: 1rem;
   border-radius: 0 0 20px 20px;
+  -webkit-box-shadow: 0px 5px 10px 1px var(--dark);
+  -moz-box-shadow: 0px 5px 10px 1px var(--dark);
+  box-shadow: 0px 5px 10px 1px var(--always-dark);
+}
 
-  border: solid 4px #0c0909; /*! DELETE */
+header h1 {
+  filter: drop-shadow(5px 3px 10px var(--opacity-medium));
 }
 
 .nav-group {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  align-items: start;
-
-  border: solid 4px #4f5823; /*! DELETE */
+  align-items: flex-start;
+  filter: drop-shadow(5px 3px 10px var(--opacity-medium));
 }
 
 nav {
@@ -25,8 +35,6 @@ nav {
   justify-content: right;
   align-items: center;
   padding: 10px;
-
-  border: solid 4px #38233d; /*! DELETE */
 }
 
 nav a {
@@ -39,33 +47,38 @@ nav a {
   text-align: center;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  filter: opacity(90%);
   outline: 0.1px solid;
   outline-color: var(--medium-dark);
   background-color: var(--dark);
 }
 
 nav a:hover {
-  background: #d4ddee;
-  background: linear-gradient(to right, #c9d7eb, #d4ddee);
+  background: var(--btn-hover-right);
+  background: linear-gradient(
+    to right,
+    var(--btn-hover-left),
+    var(--btn-hover-right)
+  );
   opacity: 100%;
-  border: 0.5px solid #3f4c6b;
-  outline-color: #606c88;
+  border: 0.5px solid var(--btn-bd);
+  outline-color: var(--btn-outline);
   outline-style: initial;
   outline-offset: 5px;
   outline-width: 5px;
-  color: var(--i-text);
+  color: var(--unique);
 }
 
 nav a:active {
-  background: #464e63;
-  background: linear-gradient(to right, #506188, #626e8a);
+  background: var(--btn-right);
+  background: linear-gradient(to right, var(--btn-left), var(--btn-right));
   opacity: 85%;
-  color: #ffffff;
+  color: var(--medium);
 }
 
-.util-group {
-  border: solid 4px #16f0a7; /*! DELETE */
-}
+/* .util-group { */
+/*! DELETE */
+/* } */
 
 /* =========================== Media Queries ========================== */
 
@@ -80,7 +93,7 @@ nav a:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     margin-top: 10px;
   }
 
@@ -99,7 +112,7 @@ nav a:active {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
   }
 
   nav {
