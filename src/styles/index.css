@@ -8,25 +8,41 @@
 }
 
 .dark {
-  --primary: #241546;
+  --light: #fff;
+  --medium: #bfbfbf;
+  --opacity-medium: #40404077;
+  --medium-dark: rgb(37, 37, 37);
+  --dark: #131313;
+  --unique: rgb(228, 44, 44);
+  --btn-hover-left: #c9d7eb;
+  --btn-hover-right: #d4ddee;
+  --btn-bd: #3f4c6b;
+  --btn-outline: #606c88;
+  --btn-left: #506188;
+  --btn-right: #626e8a;
+
+  --primary: #9e7528;
   --secondary: rgb(94, 14, 67);
   --tertiary: rgb(105, 20, 209);
-  --i-text: rgb(27, 211, 211);
-  --dark: #000000;
-  --medium-dark: rgb(37, 37, 37);
-  --medium: #bfbfbf;
-  --light: #fff;
 }
 
 .light {
-  --primary: #DBEAB9;
+  --light: #000;
+  --medium: #404040;
+  --opacity-medium: #bfbfbf86;
+  --medium-dark: rgb(218, 218, 218);
+  --dark: #FFFFFF;
+  --unique: rgb(27, 211, 211);
+  --btn-hover-left: #1b4728;
+  --btn-hover-right: #1b4233;
+  --btn-bd: #c0b392;
+  --btn-outline: #9f9377;
+  --btn-left: #af9e77;
+  --btn-right: #9d9175;
+
+  --primary: #618ADF;
   --secondary: rgb(161, 241, 188);
   --tertiary: rgb(150, 235, 46);
-  --i-text: rgb(228, 44, 44);
-  --dark: #FFFFFF;
-  --medium-dark: rgb(218, 218, 218);
-  --medium: #404040;
-  --light: #000;
 }
 
 :root {
@@ -39,6 +55,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --always-dark: #000000;
 }
 
 #root {

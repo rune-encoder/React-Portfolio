@@ -1,4 +1,3 @@
-import Greeting from "../components/Greeting.jsx";
 import aboutContent from "../content/aboutContent.js";
 
 import profilePhoto from "../assets/profile-photo.jpg";
