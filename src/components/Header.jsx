@@ -1,9 +1,9 @@
-export default function Header(props) {
-  console.log(props.children.type);
+import "../styles/Header.css";
 
+export default function Header(props) {
   return (
     <header>
-      <h1>Header.JSX</h1>
+      <h1>ᚱuᚢe Eᚢcᛟdeᚱ</h1>
       {props.children}
     </header>
   );

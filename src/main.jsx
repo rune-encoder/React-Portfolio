@@ -10,7 +10,6 @@ import Resume from "./pages/Resume.jsx";
 // import Error from "./Error.jsx";
 
 import 'tailwindcss/tailwind.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/index.css";
 
 const router = createBrowserRouter([
