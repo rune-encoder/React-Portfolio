@@ -25,9 +25,9 @@
 
   /* Theme Color Style */
   --unique: rgb(228, 44, 44);
+  --primary: #9e7528;
 
   /*! REVISIT */
-  --primary: #9e7528;
   --secondary: rgb(94, 14, 67);
   --tertiary: rgb(105, 20, 209);
 }
@@ -50,9 +50,9 @@
 
   /* Theme Color Style */
   --unique: rgb(27, 211, 211);
+  --primary: #618ADF;
 
   /*! REVISIT */
-  --primary: #618ADF;
   --secondary: rgb(161, 241, 188);
   --tertiary: rgb(150, 235, 46);
 }
@@ -67,7 +67,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --always-dark: #000000;
+  --always-dark: #000000b9;
 }
 
 #root {
@@ -96,20 +96,6 @@ main {
 /* =========================ABOVE IS GOOD=========================== */
 
 /*! =========================WORK ON BELOW=========================== */
-a {
-  font-weight: 500;
-  color: var(--tertiary);
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: var(--unique);
-}
-
-footer {
-  /* width: 100%; */
-  border: solid 4px #f01616; /*! DELETE */
-}
 
 h1 {
   font-size: 3.2em;
@@ -123,6 +109,15 @@ h2 {
 
 h3 {
   font-size: 1.8em;
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: 1.4em;
+  line-height: 1.1;}
+
+h5 {
+  font-size: 1.2em;
   line-height: 1.1;
 }
 
