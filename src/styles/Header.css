@@ -1,0 +1,117 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
+
+  border: solid 4px #0c0909; /*! DELETE */
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: start;
+
+  border: solid 4px #4f5823; /*! DELETE */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+
+  border: solid 4px #38233d; /*! DELETE */
+}
+
+nav a {
+  margin: 0 10px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  color: var(--light);
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  outline: 0.1px solid;
+  outline-color: var(--medium-dark);
+  background-color: var(--dark);
+}
+
+nav a:hover {
+  background: #d4ddee;
+  background: linear-gradient(to right, #c9d7eb, #d4ddee);
+  opacity: 100%;
+  border: 0.5px solid #3f4c6b;
+  outline-color: #606c88;
+  outline-style: initial;
+  outline-offset: 5px;
+  outline-width: 5px;
+  color: var(--i-text);
+}
+
+nav a:active {
+  background: #464e63;
+  background: linear-gradient(to right, #506188, #626e8a);
+  opacity: 85%;
+  color: #ffffff;
+}
+
+.util-group {
+  border: solid 4px #16f0a7; /*! DELETE */
+}
+
+/* =========================== Media Queries ========================== */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 10px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+}
+
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+  .nav-group {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: start;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav a {
+    padding: 0;
+    margin: 5px;
+    width: 80%;
+  }
+}
