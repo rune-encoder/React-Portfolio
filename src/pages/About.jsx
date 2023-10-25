@@ -7,7 +7,7 @@ export default function About() {
   const { title, paragraphs, slogan } = aboutContent;
 
   return (
-    <div className="container grid gap-4 laptop:grid-cols-3 large-mobile:grid-cols-2 mobile:grid-cols-1">
+    <div className="about-container grid gap-4 laptop:grid-cols-3 large-mobile:grid-cols-2 mobile:grid-cols-1">
       <div className="image-group laptop:w-auto">
         <img className="profile-photo" src={profilePhoto} alt="Profile" />
         <div className="profile-desc">

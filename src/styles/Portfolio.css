@@ -1,0 +1,121 @@
+.proj-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-container h3 {
+  font-size: 2.4em;
+  line-height: 1.1;
+  margin: 0 0 25px 25px;
+  color: var(--medium);
+}
+
+.proj-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.proj-item {
+  position: relative;
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 1px 8px -3px var(--medium-dark);
+  border: solid 0.5px var(--medium);
+  color: var(--dark);
+  background-color: var(--medium);
+  overflow: hidden;
+  box-shadow: 0px 1px 8px -3px var(--medium-dark);
+  transition: transform 0.1s ease-in;
+}
+
+.proj-item img {
+  box-shadow: 0px -3px 8px 0px var(--opacity-medium);
+}
+
+.proj-item:hover {
+  z-index: 1;
+}
+
+.proj-link-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  line-height: 1.1;
+  padding: 12px 0 0 0;
+  margin: 0 10px 5px 10px;
+}
+
+.proj-link-group a {
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: var(--dark);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  filter: opacity(90%);
+  filter: drop-shadow(5px 3px 10px var(--opacity-medium));
+}
+
+.proj-link-group a:hover {
+  outline-style: initial;
+  outline-offset: 5px;
+  outline-width: 5px;
+  border: 0.5px solid var(--btn-bd);
+  outline-color: var(--unique);
+  background-color: var(--medium);
+  opacity: 100%;
+
+  /*! Revisit */
+  color: var(--unique);
+}
+
+/* =========================== Animations ========================== */
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.proj-item:nth-child(odd) {
+  animation: wiggle 3s infinite;
+}
+
+/* =========================== Media Queries ========================== */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+  .proj-item {
+    width: 250px;
+    height: auto;
+  }
+
+  .proj-link-group {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .proj-link-group a {
+    padding: 5px;
+  }
+}
