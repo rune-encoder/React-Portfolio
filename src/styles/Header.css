@@ -86,9 +86,9 @@ nav a:active,
   outline: 0.1px solid;
   outline-color: var(--medium);
   background-color: var(--light);
-  position: fixed;
-  top: 7px;
-  right: 7px;
+  position: absolute;
+  top: 33px;
+  right: 14px;
   z-index: 2;
 }
 
@@ -138,5 +138,12 @@ nav a:active,
     padding: 0;
     margin: 5px;
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .util-group {
+    top: 95px;
+    right: 20px;
   }
 }
