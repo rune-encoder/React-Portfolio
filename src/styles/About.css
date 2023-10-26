@@ -24,6 +24,7 @@
 .profile-desc p {
   /*! REVISIT */
   color: var(--dark);
+  font-style: italic;
   margin: 0 20px;
 }
 
@@ -54,9 +55,6 @@
   justify-content: center;
   border-radius: 15px;
   padding: 10px 5px;
-
-  /*! REVISIT */
-  /* border: solid 4px #2f318b;  */
 }
 
 .title {
@@ -65,6 +63,7 @@
 
 .about-info {
   margin: 20px 5px;
+  padding: 0 0 0 10px;
 }
 
 .slogan {
@@ -72,4 +71,19 @@
   font-size: 1.2em;
   font-weight: bold;
   text-align: center;
+}
+
+/* =========================== Media Queries ============= */
+/* Desktop */
+@media screen and (max-width: 1280px) {
+  .about-info {
+    font-size: 0.9em;
+  }
+}
+
+/* Desktop */
+@media screen and (max-width: 1024px) {
+  .about-info {
+    font-size: 1.1em;
+  }
 }
