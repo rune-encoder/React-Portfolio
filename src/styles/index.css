@@ -60,6 +60,8 @@
   -webkit-text-size-adjust: 100%;
   --always-light: #ffffff;
   --always-dark: #000000b9;
+  --success: #28a745;
+  --warning: #f54323;
 }
 
 #root {
