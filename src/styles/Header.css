@@ -41,7 +41,7 @@ nav a {
   font-size: 20px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.1s ease-in;
+  transition: all 0.15s ease-in;
   filter: opacity(90%);
   outline: 0.1px solid;
   outline-color: var(--medium-dark);
@@ -57,12 +57,12 @@ nav a:hover,
     var(--btn-hover-right)
   );
   opacity: 100%;
-  border: 0.5px solid var(--btn-bd);
   outline-color: var(--btn-outline);
   outline-style: initial;
   outline-offset: 5px;
   outline-width: 5px;
   color: var(--unique);
+  transform: scale(0.95);
 }
 
 nav a:active,
@@ -73,23 +73,25 @@ nav a:active,
   color: var(--medium);
 }
 
-/*! Revisit */
 .util-group {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 5px;
   border: none;
   border-radius: 50px;
-  color: var(--light);
   font-size: 20px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.1s ease-in;
   filter: opacity(90%);
   outline: 0.1px solid;
-  outline-color: var(--medium);
+  color: var(--medium-dark);
   background-color: var(--light);
-  position: absolute;
+  border: solid 1px var(--dark);
+  outline-color: var(--medium);
+  transition: all 0.2s ease-in;
   top: 33px;
   right: 14px;
-  z-index: 2;
 }
 
 /* =========================== Media Queries ========================== */
@@ -138,12 +140,5 @@ nav a:active,
     padding: 0;
     margin: 5px;
     width: 80%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .util-group {
-    top: 95px;
-    right: 20px;
   }
 }

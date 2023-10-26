@@ -46,16 +46,14 @@ footer {
 }
 
 .footer-links-group a:hover {
+  transform: scale(1.1);
   outline-style: initial;
-  outline-offset: 5px;
-  outline-width: 5px;
-  border: 0.5px solid var(--btn-bd);
+  outline-offset: 3px;
+  outline-width: 3px;
   outline-color: var(--unique);
   background-color: var(--medium);
+  color: var(--unique);
   opacity: 100%;
-
-  /*! Revisit */
-  color: var(--unique); 
 }
 
 .footer-links-group a:active {
@@ -67,6 +65,7 @@ footer {
 
 .footer-links-group a[data-descr]:hover::after {
   content: attr(data-descr);
+  font-size: 0.6em;
 }
 
 .icon {

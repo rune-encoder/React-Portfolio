@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1536px;
+  margin: 40px 0;
+  padding: 30px 30px;
+  border-radius: 20px;
+  background-color: var(--dark);
+  border: 1.5px solid transparent;
+  -webkit-box-shadow: 0px 1px 8px 2px var(--opacity-medium);
+  -moz-box-shadow: 0px 1px 8px 2px var(--opacity-medium);
+  box-shadow: 0px 1px 8px 2px var(--opacity-medium);
+  z-index: 1;
+}
+
+.pulse-animation {
+  animation: borderLoop 4s linear infinite;
+}
+
+@keyframes borderLoop {
+  0% {
+    border-color: var(--light);
+  }
+  25% {
+    border-color: var(--medium);
+  }
+  50% {
+    border-color: var(--opacity-medium);
+  }
+  75% {
+    border-color: var(--medium);
+  }
+  100% {
+    border-color: var(--light);
+  }
+}

@@ -29,7 +29,7 @@
   background-color: var(--medium);
   overflow: hidden;
   box-shadow: 0px 1px 8px -3px var(--medium-dark);
-  transition: transform 0.1s ease-in;
+  transition: transform 0.15s ease-in;
 }
 
 .proj-item img {
@@ -65,8 +65,6 @@
 
 .proj-link-group a:hover {
   opacity: 100%;
-
-  /*! Revisit */
   color: var(--unique);
   filter: drop-shadow(5px 3px 10px var(--medium));
 }
