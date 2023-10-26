@@ -26,7 +26,7 @@ export default function Nav() {
             <Link
               key={link.id}
               to={link.path}
-              className={isLinkDisabled(link) ? "disabled" : ""}
+              className={isLinkDisabled(link) ? "active" : ""}
             >
               {link.text}
             </Link>
