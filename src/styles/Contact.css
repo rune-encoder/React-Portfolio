@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 }
 
 .cont-container h3 {
-    font-size: 2.4em;
-    line-height: 1.1;
-    margin: 0 0 25px 0;
-    color: var(--medium);
+  font-size: 2.4em;
+  line-height: 1.1;
+  margin: 0 0 25px 0;
+  color: var(--medium);
 }
 
 .form-group {
@@ -18,20 +18,16 @@
   justify-content: center;
   border-radius: 15px;
   overflow: hidden;
-
-  /* !Revise */
   color: var(--dark);
   background-color: var(--medium);
-  transition: transform 0.15s ease-in;
-
   padding: 30px 25px;
   width: 400px;
   height: auto;
 }
 
 .form-group form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-section {
@@ -45,10 +41,14 @@
   padding: 5px;
   border: none;
   border-radius: 5px;
-
   text-shadow: 1px 1px 2px var(--medium);
   background-color: var(--light);
   color: var(--dark);
+}
+
+.form-section label {
+    font-weight: bold;
+    color: var(--dark);
 }
 
 .form-section textarea {
@@ -57,26 +57,56 @@
   width: auto;
 }
 
-.test {
-  border: solid 4px var(--medium);
+.error,
+.success {
+  text-align: center;
+  background-color: var(--medium-dark);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px 5px;
 }
 
-.error {
-    text-align: center;
-    background-color: var(--medium-dark);
-    color: var(--warning);
-    border-radius: 5px;
-    font-weight: bold;
-    border: solid 1px var(--warning);
-    padding: 10px 5px;
+.form-group form button {
+  margin: 10px 0;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  filter: opacity(90%);
+  outline: 0.1px solid;
+  outline-color: var(--medium-dark);
+  background-color: var(--always-light);
+  color: var(--always-dark);
+  text-shadow: 1px 1px 2px var(--opacity-medium);
+  filter: drop-shadow(5px 3px 10px var(--opacity-medium));
+  transition: all 0.2s ease-in;
+}
+
+.form-group form button:hover {
+  outline-style: initial;
+  outline-offset: 3px;
+  outline-width: 3px;
+  outline-color: var(--unique);
+  background-color: var(--medium-dark);
+  color: var(--light);
+}
+
+.form-group form button:active {
+  background-color: var(--medium);
+  color: var(--unique);
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 .success {
-    text-align: center;
-    background-color: var(--medium-dark);
-    color: var(--success);
-    border-radius: 5px;
-    font-weight: bold;
-    border: solid 1px var(--success);
-    padding: 10px 5px;
+  color: var(--success);
+  border: solid 1px var(--success);
+}
+
+.error {
+  color: var(--warning);
+  border: solid 1px var(--warning);
 }
