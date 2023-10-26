@@ -47,8 +47,8 @@
 }
 
 .form-section label {
-    font-weight: bold;
-    color: var(--dark);
+  font-weight: bold;
+  color: var(--dark);
 }
 
 .form-section textarea {
@@ -93,12 +93,6 @@
 .form-group form button:active {
   background-color: var(--medium);
   color: var(--unique);
-}
-
-.disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.3;
 }
 
 .success {
