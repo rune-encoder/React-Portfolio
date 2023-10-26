@@ -24,7 +24,7 @@
   --btn-right: #626e8a;
 
   /* Theme Color Style */
-  --unique: rgb(228, 44, 44);
+  --unique: #e01843;
   --primary: #9e7528;
 }
 
@@ -116,22 +116,9 @@ h5 {
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.1em;
   line-height: 1.3;
-}
-
-/* ! =========================== Media Queries ============= DELETE */
-/* Tablets */
-@media screen and (max-width: 992px) {
-  h1 {
-    color: var(--secondary);
-  }
-}
-/* Large smartphones */
-@media screen and (max-width: 768px) {
-  h1 {
-    color: var(--tertiary);
-  }
+  filter: drop-shadow(5px 3px 10px var(--opacity-medium));
 }
 
 /* =========================== HEADER ========================= */

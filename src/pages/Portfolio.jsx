@@ -1,5 +1,5 @@
 import "../styles/Portfolio.css";
-import portfolioContent from "../content/portfolioContent";
+import portfolioContent from "../content/portfolio-content.json";
 import { FaGithub } from "react-icons/fa";
 
 export default function Portfolio() {

@@ -58,22 +58,17 @@
   border-radius: 5px;
   color: var(--dark);
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
   filter: opacity(90%);
   filter: drop-shadow(5px 3px 10px var(--opacity-medium));
 }
 
 .proj-link-group a:hover {
-  outline-style: initial;
-  outline-offset: 5px;
-  outline-width: 5px;
-  border: 0.5px solid var(--btn-bd);
-  outline-color: var(--unique);
-  background-color: var(--medium);
   opacity: 100%;
 
   /*! Revisit */
   color: var(--unique);
+  filter: drop-shadow(5px 3px 10px var(--medium));
 }
 
 /* =========================== Animations ========================== */
