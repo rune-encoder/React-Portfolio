@@ -56,20 +56,44 @@
   text-align: center;
   border: none;
   border-radius: 5px;
-  color: var(--dark);
+  color: var(--always-light);
   cursor: pointer;
   transition: all 0.1s ease-in;
   filter: opacity(90%);
-  filter: drop-shadow(5px 3px 10px var(--opacity-medium));
+  filter: drop-shadow(5px 3px 10px var(--always-dark));
 }
 
 .proj-link-group a:hover {
   opacity: 100%;
-  color: var(--unique);
   filter: drop-shadow(5px 3px 10px var(--medium));
+  animation: pulse 1s linear infinite;
+  filter: drop-shadow(5px 3px 10px var(--always-dark));
 }
 
 /* =========================== Animations ========================== */
+
+@keyframes pulse {
+  0% {
+    color: var(--always-light);
+    transform: scale(1);
+  }
+  25% {
+    color: var(--unique);
+    transform: scale(0.98);
+  }
+  50% {
+    color: var(--primary);
+    transform: scale(0.96);
+  }
+  75% {
+    color: var(--unique);
+    transform: scale(0.98);
+  }
+  100% {
+    color: var(--always-light);
+    transform: scale(1);
+  }
+}
 
 @keyframes wiggle {
   0% {
