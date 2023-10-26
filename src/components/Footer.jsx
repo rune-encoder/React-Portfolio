@@ -1,11 +1,9 @@
-import "../styles/Footer.css";
-
 import React from "react";
-
+import "../styles/Footer.css";
 import footerContent from "../content/footerContent.js";
-const { footerText, socialLinks } = footerContent;
 
 export default function Footer() {
+  const { footerText, socialLinks } = footerContent;
   return (
     <footer>
       <div className="footer-links-group">
