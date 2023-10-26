@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Portfolio() {
   const { title, projects } = portfolioContent;
+  const isDev = process.env.NODE_ENV === 'development'
 
   return (
     <div className="proj-container">
@@ -11,7 +12,7 @@ export default function Portfolio() {
       <div className="proj-group">
         {projects.map((project) => (
           <div key={project.id} className="proj-item">
-            <img src={project.imageUrl} alt={project.title} />
+            <img src={isDev ? `/src${project.imageUrl}` : project.imageUrl} alt={project.title} />
             <div className="proj-link-group">
               <a href={project.deployedLink} target="_blank">
                 {project.title}
