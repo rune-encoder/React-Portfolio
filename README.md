@@ -10,9 +10,11 @@
 
 Deployed Website URL: **[My Portfolio URL](https://christian-palacios-portfolio.netlify.app/)**
 
-Welcome to my **React-Portfolio** – a dynamic web application meticulously crafted to introduce myself to the world. This project was born from the desire to infuse it with unique style, a reflection of my personality, and an irresistible appeal.
+Welcome to my **React-Portfolio** – a dynamic web application meticulously created to introduce myself to the world. This project was born from the desire to infuse it with a unique style, a reflection of my personality, and hard work.  
 
-Within this React portfolio, I offer you insights into my background, achievements, and ways to get in touch, along with access to my professional resume. Here's what you can look forward to:
+Within this React portfolio, I offer you insights into my background and ways to get in touch, along with access to my professional resume.  
+
+Here's what you can look forward to:
 
 - **Header & Navigation:**
 - **About Me:** Dive into my personal journey, passions, and individuality, as I share my unique style and personality.
@@ -50,8 +52,6 @@ Here are the technologies and tools that power my React-Portfolio:
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-**React-Portfolio** is an open-source marvel, licensed under the MIT License. Refer to the LICENSE in the repository for all the legal details. Let's keep the spirit of open source alive and thriving!
 
 ## Credits and Questions
 
