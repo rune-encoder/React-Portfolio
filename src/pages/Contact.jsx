@@ -1,3 +1,8 @@
 export default function Contact() {
-  return <h1>Contact.JSX</h1>;
+  return (
+    <div>
+      <h1>Contact.jsx</h1>
+      <p>This is the contact page.</p>
+    </div>
+  );
 }
