@@ -9,7 +9,7 @@ export default function Resume() {
     <div className="res-container ">
       <div className="res-top-group ">
         <div className="rt-group-one">
-          <h3 className="title">{title}</h3>
+          <h3 className="res-title">{title}</h3>
           <h4>{name}</h4>
           <text>{phone}</text>
           <text>{email}</text>
