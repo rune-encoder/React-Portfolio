@@ -14,7 +14,7 @@ import codeQuiz from "../assets/project-photos/project-code-quiz.png";
 import passwordGenerator from "../assets/project-photos/project-password-generator.png";
 
 const portfolioContent = {
-  title: "Portfolio",
+  title: "My Portfolio",
   projects: [
     {
       id: 14,

@@ -80,10 +80,10 @@
   pointer-events: none;
   font-weight: bold;
   color: var(--btn-hover-left);
-  outline: 0.1px solid var(--light);
+  outline: 0.1px solid var(--medium);
   background-color: var(--medium-dark);
   opacity: 0.8;
-  transform: scale(0.92);
+  transform: scale(0.99);
 }
 
 .disabled {
