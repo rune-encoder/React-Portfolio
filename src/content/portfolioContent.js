@@ -1,3 +1,5 @@
+import marketVerse from "../assets/project-photos/project-marketverse.png";
+import bookSearch from "../assets/project-photos/project-book-search-engine.png";
 import textEditor from "../assets/project-photos/project-text-editor.png";
 import socialAPI from "../assets/project-photos/project-social-network-api.png";
 import unityBiz from "../assets/project-photos/project-unitybiz.png";
@@ -16,6 +18,20 @@ import passwordGenerator from "../assets/project-photos/project-password-generat
 const portfolioContent = {
   title: "My Portfolio",
   projects: [
+    {
+      id: 16,
+      title: "MarketVerse",
+      imageUrl: `${marketVerse}`,
+      deployedLink: "https://marketverse-53c316895099.herokuapp.com/",
+      githubRepo: "https://github.com/rune-encoder/MarketVerse",
+    },
+    {
+      id: 15,
+      title: "Book Search Engine",
+      imageUrl: `${bookSearch}`,
+      deployedLink: "https://book-search-viewer-2f4ed48c79f2.herokuapp.com/",
+      githubRepo: "https://github.com/rune-encoder/Book-Search-Engine",
+    },
     {
       id: 14,
       title: "Ultimate Text Editor",
